@@ -10,7 +10,7 @@ int validarEntrada(int n) {
 void fibonacciFor(int n) {
     int a = 0, b = 1, c;
 
-    for (int i = 0; i <= n; i++) {  // Ajuste aqui: i <= n
+    for (int i = 0; i <= n; i++) {  
         printf("%d ", a);
         c = a + b;
         a = b;
@@ -24,7 +24,7 @@ void fibonacciWhile(int n) {
     int a = 0, b = 1, c;
     int i = 0;
 
-    while (i <= n) {  // Ajuste aqui: i <= n
+    while (i <= n) {  
         printf("%d ", a);
         c = a + b;
         a = b;
