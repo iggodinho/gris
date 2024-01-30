@@ -3,7 +3,13 @@
 
 // Verifica se a entrada é um número inteiro positivo entre 5 e 15
 int validarEntrada(int n) {
-    return (n >= 5 && n <= 15) ? 1 : 0;
+    if (n >= 5 && n <= 15) {
+        // Verifica se a parte decimal é zero
+        if (n - (int)n == 0) {
+            return 1; // Número é inteiro e está na faixa desejada
+        }
+    }
+    return 0; // Não atende aos critérios
 }
 
 // Calcula e imprime a sequência de Fibonacci usando for
